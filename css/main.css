@@ -46,7 +46,7 @@
 .double-editor .editing {
 	color: transparent;
 	background: transparent;
-	caret-color: white;
+	caret-color: black;
 }
 
 /* Can be scrolled */

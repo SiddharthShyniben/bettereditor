@@ -73,7 +73,8 @@ pre[class*='language-'] {
 .token.comment,
 .token.prolog,
 .token.doctype,
-.token.cdata {
+.token.cdata,
+.token.url {
 	color: slategray;
 }
 
@@ -106,7 +107,6 @@ pre[class*='language-'] {
 
 .token.operator,
 .token.entity,
-.token.url,
 .language-css .token.string,
 .style .token.string {
 	color: #9a6e3a;
@@ -137,6 +137,18 @@ pre[class*='language-'] {
 }
 .token.italic {
 	font-style: italic;
+}
+
+.token.strike .content {
+	text-decoration: line-through;
+}
+
+.token.url .content {
+	color: #dd4a68;
+}
+
+.token.url .url {
+	color: #07a
 }
 
 .token.entity {

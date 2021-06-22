@@ -12,16 +12,22 @@
 
 <body>
 	<div>
-		<p>Text here: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure minus ipsa cupiditate quibusdam alias, sed veniam ipsum accusantium, architecto repellendus reiciendis sint officia veritatis ea beatae velit. Similique, obcaecati deleniti!</p>
-		<p>Please check the code block below:</p>
 		<div class='double-editor'>
-			<textarea name='editing' class='editing' spellcheck='false'># Initial Text</textarea>
+			<textarea name='editing' class='editing' spellcheck='false'># Hey there!
+Hello there! What you are looking at is a **custom built** markdown editor with a _whole lot_ of features:
+- You get _all_ your native stuff
+	- This editor is basically a textarea disguised as an editor, so you can use all your `cmd + arrow key` and `alt + arrow key` tricks
+	- Clicking works
+	- So do undos (most of the time)
+- Syntax highlighting! 
+	- Try typing **bold** or _italic_ or ~~strikethrough~~ or `code` or a [link](https://github.com/SiddharthShyniben)
+- If you type `'`, then two quotes will be inserted. Same goes for double quotes, brackets, `_`s, `*`s, and so on
+- You can use snippets. Only one snippet has been activated, which is `[1-6]#`, which will insert that number of hashes (`#`)
+- You can keep typing and the editor will auto-resize</textarea>
 			<pre class='highlighting language-markdown' aria-hidden='true'>
 				<code class='highlighting-content'></code>
 			</pre>
 		</div>
-		<p>Other control text</p>
-		<p>Other control text too. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolorum pariatur dolorem? Veritatis, odit nobis? Id perspiciatis voluptatum sunt laboriosam aliquam rem hic quas, nobis possimus similique debitis autem totam.</p>
 	</div>
 	<script src='js/utils.js'></script>
 	<script src='js/highlighting.js'></script>
