@@ -1,0 +1,62 @@
+.double-editor {
+	position: relative;
+	height: 100%;
+	/* Border to make sure that the cursor stays properly */
+	border: 1px solid #0000;
+	border-radius: 5px;
+}
+.double-editor .editing,
+.double-editor .highlighting {
+	/* Both elements need the same text and space styling so they are directly on top of each other */
+	margin: 10px;
+	padding: 10px;
+	border: 0;
+	outline: none;
+	width: calc(100% - 40px);
+	height: 100%;
+	min-height: 160px;
+}
+
+.double-editor .editing,
+.double-editor .highlighting,
+.double-editor .highlighting * {
+	font-size: 10pt;
+	font-family: 'Fira Code';
+	line-height: 15pt;
+}
+
+.double-editor .editing,
+.double-editor .highlighting {
+	position: absolute;
+	top: 0;
+}
+
+/* Move the textarea in front of the result */
+
+.double-editor .editing {
+	z-index: 1;
+}
+
+.double-editor .highlighting {
+	z-index: 0;
+}
+
+/* Make textarea almost completely transparent */
+
+.double-editor .editing {
+	color: transparent;
+	background: transparent;
+	caret-color: white;
+}
+
+/* Can be scrolled */
+.double-editor .editing,
+.double-editor .highlighting {
+	overflow: auto;
+	white-space: nowrap;
+	/* Allows textarea to scroll horizontally */
+}
+
+.double-editor .editing {
+	resize: none;
+}

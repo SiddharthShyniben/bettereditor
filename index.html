@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+	<meta charset='UTF-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<title>Editable textarea</title>
+	<link rel='stylesheet' href='css/main.css'>
+	<link rel='stylesheet' href='css/highlight.css'>
+</head>
+
+<body>
+	<div>
+		<p>Text here: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure minus ipsa cupiditate quibusdam alias, sed veniam ipsum accusantium, architecto repellendus reiciendis sint officia veritatis ea beatae velit. Similique, obcaecati deleniti!</p>
+		<p>Please check the code block below:</p>
+		<div class='double-editor'>
+			<textarea name='editing' class='editing' spellcheck='false'># Initial Text</textarea>
+			<pre class='highlighting language-markdown' aria-hidden='true'>
+				<code class='highlighting-content'></code>
+			</pre>
+		</div>
+		<p>Other control text</p>
+		<p>Other control text too. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolorum pariatur dolorem? Veritatis, odit nobis? Id perspiciatis voluptatum sunt laboriosam aliquam rem hic quas, nobis possimus similique debitis autem totam.</p>
+	</div>
+	<script src='js/utils.js'></script>
+	<script src='js/highlighting.js'></script>
+	<script src='js/update.js'></script>
+	<script src='js/editing.js'></script>
+</body>
+
+</html>
